@@ -1,0 +1,37 @@
+{
+  "name": "DropDown",
+  "version": "1.0.0",
+  "description": "js react project",
+  "main": "app.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sasha Gasper",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "babel-core": "^6.26.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es": "^1.0.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.9",
+    "exports-loader": "^0.6.4",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "image-webpack-loader": "^3.4.2",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "script-loader": "^0.7.2",
+    "style-loader": "^0.19.1",
+    "transfer-webpack-plugin": "^0.1.4",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0"
+  }
+}

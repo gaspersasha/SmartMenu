@@ -1,0 +1,197 @@
+//configuration
+
+$switch-left : 20%;
+$switch-right : 40%;
+
+$body-color : #444444;
+$menu-color : #ff3e83;
+$white : white;
+$dark : rgba(0, 0, 0, 0.38);
+
+$f-size : 16px;
+$f-family : Arial , sans-serif;
+
+%hw-100 {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+//common
+
+html {
+    @extend %hw-100;
+}
+
+body{
+    @extend %hw-100;
+    background-color: $body-color;
+    font-size: $f-size;
+    font-family: $f-family;
+}
+
+a{
+    text-decoration: none;
+    color: $dark;
+}
+
+//header
+
+.header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 70px;
+    width: 100%;
+    background-color: $menu-color;
+}
+
+.header{
+
+    .head-menu{
+        width: 400px;
+    }
+
+    sign{
+        display: block;
+        float: right;
+        padding: 26px;
+        font-style: italic;
+        font-weight: bold;
+        color: $dark;
+    }
+
+    sign a:hover{
+        color: white;
+    }
+
+}
+
+
+//content
+
+.content{
+    @extend %hw-100;
+}
+
+.content{
+
+    .block{
+        width: 20%;
+        background-color: $menu-color;
+    }
+
+    .block-left{
+        float: left;
+        margin-top: $switch-left;
+    }
+
+    .block-right{
+        float: right;
+        margin-top: $switch-right;
+    }
+
+}
+
+//footer
+
+.footer{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    height: 70px;
+    width: 100%;
+    background-color: $menu-color;
+}
+
+
+//DropDown
+
+.SS-container, .SS-title span{
+    float:  left;
+    width: 100%;
+}
+
+.SS-title{
+    padding: 25px;
+    cursor: pointer;
+    color: $white;
+    border: 1px solid $white;
+}
+
+.SS-title:hover{
+    background-color: #ff73b5;
+}
+
+.SS-list{
+    position: fixed;
+    z-index: 10000;
+    width: auto;
+    max-height: 90%;
+    background-color: $white;
+    overflow: scroll;
+}
+
+.SS-list.opened{
+    display: block;
+}
+
+.SS-list.closed{
+    display: none;
+}
+
+.SS-list{
+
+    .item{
+        height: 20px;
+        padding: 25px;
+        color: $body-color;
+        cursor: pointer;
+    }
+
+    .item:hover{
+        background-color: $menu-color;
+        color: white;
+    }
+
+    a{
+        width: 90%;
+        float: left;
+    }
+}
+
+.SS-container{
+
+    .ico{
+        font-style: normal;
+        position: relative;
+        width: 4px;
+        margin-left: -30px;
+        font-weight: bold;
+        padding-right: 10px;
+        text-align: right;
+        line-height: 0;
+    }
+
+    .arrow-down:after{
+        content: "\0021a1";
+    }
+
+    .arrow-left:after{
+        content: "\00219e";
+    }
+
+    .arrow-right:after{
+        content: "\0021a0";
+    }
+
+    .arrow-up:after{
+        content: "\00219f";
+    }
+}
+
+
+
+
