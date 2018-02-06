@@ -33,10 +33,15 @@ app.listen(3000, function () { (line 6)
 
 Start webpack:
  ```
- webpack -w
- ```
+webpack -w
+```
  
- You will get compiled bundle.js in /public
+You will get compiled bundle.js in /public
+ 
+Go to UTR:
+ ```
+http://localhost:3000/
+ ```
  
  
 ### Smart Menu configuration
