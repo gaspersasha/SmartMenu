@@ -14,7 +14,6 @@ module.exports = {
         alias: {
             Page: __dirname + '/app/components/page.jsx',
             SmartMenu: __dirname + '/app/components/smart-menu.jsx',
-            MenuItem: __dirname + '/app/components/menu-item.jsx',
         }
     },
 
