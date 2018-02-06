@@ -1,6 +1,6 @@
 # Smart Menu with React
 
-Drop Down menu which appears responsibly on a page.
+Drop Down menu which appears responsibly on a page
 
 ### Dependencies
 
@@ -31,7 +31,7 @@ app.listen(3000, function () { (line 6)
 ...
 ```
 
-start webpack:
+Start webpack:
  ```
  webpack -w
  ```
@@ -50,10 +50,12 @@ SmartMenu is react component which takes following array of data to display:
  }
 ```
 
-Pass it asm param to the SmartMenu witch basic title
+Pass it as param to the SmartMenu witch basic title:
  ```
  <SmartMenu title='SmartMenu or SS' list={FirstList}/>
  ```
+ 
+ WATCH page.jsx
 
 ### Testing
 
